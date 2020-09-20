@@ -1,0 +1,26 @@
+
+body {
+    font-family: Arial;
+  }
+  #btnSend {
+    background-color: bisque;
+  }
+  p {
+    color: orangered;
+  }
+  #message {
+    background-color: bisque;
+    cursor: pointer;
+  }
+  li {
+    border: 1px sold saddlebrown;
+  }
+  span {
+    float: right;
+    background-color: saddlebrown;
+    color: silver;
+  }
+
+  .new_messageLinethrough {
+    text-decoration: line-through;
+  }
