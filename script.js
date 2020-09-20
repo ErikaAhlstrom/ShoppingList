@@ -21,11 +21,25 @@ document.addEventListener('DOMContentLoaded', function(e) {
         div.appendChild(new_message);
         message.value = '';
         message.focus();
+        
 
+        // Skapar en ny input element
+        let checkbox = document.createElement("INPUT");
+        // Sätter attribut type=checkbox.
+        checkbox.setAttribute("type", "checkbox");
+        // lägger den inuti new_message
+        new_message.appendChild(checkbox);
+        // Om checkboxen är checkad så stryks den över
+        if (checkbox.value) {
+            checkbox.classList.add("new_messageLinethrough");
+        }
+   
         // Gör en linje igenom texten när man klickar på new_message
         new_message.addEventListener("click", function(e){
         // Skapar en ny class åt new_message som gör att den bli genomstruken när man klickar.
         new_message.classList.add("new_messageLinethrough");
+
+
         
         });
 
